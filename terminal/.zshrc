@@ -156,3 +156,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source /Users/sebas/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# fnm
+export PATH="/Users/sebas/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"

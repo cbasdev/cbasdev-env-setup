@@ -90,6 +90,14 @@ Install_NVM ()
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
     source ~/.bash_profile 
 }
+#Install FNM
+Install_FNM ()
+{
+    brew install fnm
+    eval "$(fnm env --use-on-cd --version-file-strategy=recursive)"
+    source ~/.zshrc
+}
+
 #Install Node
 Install_Node ()
 {
@@ -342,7 +350,7 @@ Menu ()
     echo "  5) Instalar Python3"
 	echo "  6) Instalar Furycli"
     echo "  7) Instalar Go"
-    echo "  8) Instalar NVM"
+    echo "  8) Instalar FNM"
     echo "  9) Instalar Node"
 	echo "  10) Instalar Ruby"
     echo "  11) Instalar Elastic Search"
@@ -367,6 +375,7 @@ do
             Install_FuryCLI
             Install_Go
             Install_NVM
+            Install_FNM
             Install_Node
             Install_Ruby
             Install_Elastic
@@ -401,7 +410,7 @@ do
             Menu
             ;;
         8)
-            Install_NVM
+            Install_FNM
             Menu
             ;;
         9)
