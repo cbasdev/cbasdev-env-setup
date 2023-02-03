@@ -160,3 +160,5 @@ source /Users/sebas/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # fnm
 export PATH="/Users/sebas/Library/Application Support/fnm:$PATH"
 eval "`fnm env`"
+# Added by furycli:
+export PATH="$HOME/Library/Python/3.8/bin:$PATH"
