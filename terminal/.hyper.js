@@ -22,7 +22,7 @@ module.exports = {
     fontWeightBold: 'normal',
 
     // line height as a relative unit
-    lineHeight: 1.1,
+    lineHeight: 1.2,
 
     // letter spacing as a relative unit
     letterSpacing: -0.7,
@@ -46,10 +46,10 @@ module.exports = {
     // opacity is only supported on macOS
 
     // terminal selection color
-    selectionColor: 'rgba(248,28,229,0.3)',
+    selectionColor: 'rgba( 255, 255, 255, 0.6)',
 
     // border color (window, tabs)
-    borderColor: '#663399',
+    borderColor: '#1f222d',
 
     // custom CSS to embed in the main window
     css: '',
@@ -73,9 +73,9 @@ module.exports = {
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
     colors: {
-      black: '#000000',
-      red: '#C51E14',
-      green: '#1DC121',
+      black: '#1f222d',
+      red: '#F44747',
+      green: '#27ffd4',
       yellow: '#C7C329',
       blue: '#0A2FC4',
       magenta: '#C839C5',
@@ -87,7 +87,7 @@ module.exports = {
       lightYellow: '#FFFA72',
       lightBlue: '#6ae0fb',
       lightMagenta: '#FD7CFC',
-      lightCyan: '#b973ff',
+      lightCyan: '#9A86FD',
       lightWhite: '#FFFFFF',
     },
 
@@ -104,6 +104,8 @@ module.exports = {
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
     shell: '',
+
+    backgroundColor:'#1f222d',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used

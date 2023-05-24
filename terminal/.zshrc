@@ -132,12 +132,7 @@ export PATH=/opt/homebrew/lib/ruby/gems/2.7.0/bin:$PATH
 if [ -f /Users/sebas/.tnsrc ]; then 
     source /Users/sebas/.tnsrc 
 fi
-###-tns-completion-end-###
 
-# Added by furycli:
-export PATH="$HOME/Library/Python/<your_python_version>/bin:$PATH"
-# Added by furycli:
-export PATH="$HOME/Library/Python/3.8/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -146,19 +141,16 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source /Users/sebas/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# fnm
+export PATH="/Users/sebas/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
+
+source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-source /Users/sebas/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# fnm
-export PATH="/Users/sebas/Library/Application Support/fnm:$PATH"
-eval "`fnm env`"
-# Added by furycli:
-export PATH="$HOME/Library/Python/3.8/bin:$PATH"
