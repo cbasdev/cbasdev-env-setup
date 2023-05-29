@@ -1,5 +1,5 @@
 # Entorno de trabajo
-Este repositorio contiene scripts para instalar y configurar mi entorno de trabajo en una nueva computadora.
+Este repositorio contiene scripts para instalar y configurar el entorno de trabajo que utilizo.
 
 ### Instalación
 Para instalar, clona este repositorio en tu computadora y ejecuta el script install.sh. Este script se encargará de instalar todas las dependencias necesarias y configurar tu entorno de trabajo.
