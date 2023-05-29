@@ -1,4 +1,4 @@
-# Entorno de trabajo
+# Entorno de trabajo 🔧
 Este repositorio contiene scripts para instalar y configurar el entorno de trabajo que utilizo.
 
 ### Instalación
