@@ -1,0 +1,41 @@
+format = """
+[ ▲ ](fg:#fff)\
+$directory\
+$git_branch\
+$git_status\
+[ 🪐 ](fg:#394260)\
+$nodejs\
+$rust\
+$golang\
+\n$character"""
+
+[directory]
+style = "fg:#7e92ff"
+format = "[ $path ]($style)"
+truncation_length = 3
+
+[git_branch]
+style = "fg:#fb00ff"
+format = '[[ $symbol $branch ](fg:#fb00ff)]($style)'
+
+[git_status]
+style = "fg:#fb00ff"
+format = '[[($all_status$ahead_behind )](fg:#769ff0)]($style)'
+
+[nodejs]
+symbol = "➤"
+style = "bg:#212736"
+format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[rust]
+symbol = "➤"
+style = "bg:#212736"
+format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[golang]
+symbol = "➤"
+style = "bg:#212736"
+format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[time]
+disabled = true

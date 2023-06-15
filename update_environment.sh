@@ -6,13 +6,14 @@ Import_Config ()
   cp ~/.hyper.js ./terminal/
   cp ~/.p10k.zsh ./terminal/  
   cp ~/.zshrc ./terminal/
+  cp ~/.config/starship.toml ./terminal/.config
 
   echo "${GR}Configuración importada exitosamente ✅\n"
 }
 Export_Config ()
 {
   cp -r ./terminal/ ~/
-  source ~/.zshrc
+  # source ~/.zshrc
   echo "${GR}Configuración exportada exitosamente ✅\n"
 }
 

@@ -49,7 +49,7 @@ module.exports = {
     selectionColor: 'rgba( 255, 255, 255, 0.6)',
 
     // border color (window, tabs)
-    borderColor: '#1f222d',
+    borderColor: '#666',
 
     // custom CSS to embed in the main window
     css: '',
