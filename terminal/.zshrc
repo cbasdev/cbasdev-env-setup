@@ -152,3 +152,12 @@ eval "`fnm env`"
 
 
 eval "$(starship init zsh)"
+
+export PATH=$PATH:~/go/bin
+
+# bun completions
+[ -s "/Users/sebas/.bun/_bun" ] && source "/Users/sebas/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

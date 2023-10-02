@@ -7,7 +7,7 @@ $git_status\
 $nodejs\
 $rust\
 $golang\
-\n$character"""
+\n"""
 
 [directory]
 style = "fg:#7e92ff"
