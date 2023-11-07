@@ -15,15 +15,6 @@ Install_OhMyZsh ()
 {
   sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 }
-Install_P10K ()
-{
-  git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ~/powerlevel10k
-  echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-}
-Install_Fig ()
-{
-  brew install --cask fig
-}
 Install_ZshAutoSuggestions ()
 {
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -39,8 +30,6 @@ Menu ()
 	echo "  1) Instalar todo el ambiente"
 	echo "  2) Instalar Homebrew"
 	echo "  3) Instalar oh-my-zsh"
-	echo "  4) Instalar PowerLevel10k"
-  echo "  5) Instalar Fig"
   echo "  6) Instalar zsh-autosuggestions"
   echo "  7) Instalar zsh-syntax-highlighting"
 	echo "  8) Salir"

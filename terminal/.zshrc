@@ -161,3 +161,14 @@ export PATH=$PATH:~/go/bin
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# fnm
+export PATH="/Users/sebas/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
+export RANGER_FURY_LOCATION=/Users/sebas/.fury #Added by Fury CLI
+export RANGER_FURY_VENV_LOCATION=/Users/sebas/.fury/fury_venv #Added by Fury CLI
+
+# Added by Fury CLI installation process
+declare FURY_BIN_LOCATION="/Users/sebas/.fury/fury_venv/bin" # Added by Fury CLI installation process
+export PATH="$PATH:$FURY_BIN_LOCATION" # Added by Fury CLI installation process
+# Added by Fury CLI installation process

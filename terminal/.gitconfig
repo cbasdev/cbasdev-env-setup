@@ -1,0 +1,13 @@
+[url "git@github.com-emu:sevelez_meli/"]
+	insteadOf = https://github.com/melisource/
+[url "github.com-meli:sevelez_meli/"]
+	insteadOf = https://github.com/sevelez_meli/
+	insteadOf = git@github.com:sevelez_meli/
+[url "git@github.com:cbasdev/"]
+	insteadOf = https://github.com/cbasdev/
+	insteadOf = git@github.com:cbasdev/
+[url "git@github.com-emu:melisource/"]
+	insteadOf = https://github.com/melisource/
+	insteadOf = git@github.com:melisource/
+[url "git@github.com:melisource/"]
+	insteadOf = https://github.com/melisource/
