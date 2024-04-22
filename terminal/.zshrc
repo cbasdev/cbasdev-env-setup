@@ -75,7 +75,6 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
@@ -111,20 +110,18 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo Dracula)"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 google-chrome() { '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' "$@"; }
 
 
-export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
 export PATH=/opt/homebrew/bin:$PATH
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=/opt/homebrew/lib/ruby/gems/2.7.0/bin:$PATH
 
 ###-tns-completion-start-###
 if [ -f /Users/sebas/.tnsrc ]; then 
@@ -139,11 +136,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-source /Users/sebas/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# fnm
-export PATH="/Users/sebas/Library/Application Support/fnm:$PATH"
-eval "`fnm env`"
 
 # source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -162,9 +154,6 @@ export PATH=$PATH:~/go/bin
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# fnm
-export PATH="/Users/sebas/Library/Application Support/fnm:$PATH"
-eval "`fnm env`"
 export RANGER_FURY_LOCATION=/Users/sebas/.fury #Added by Fury CLI
 export RANGER_FURY_VENV_LOCATION=/Users/sebas/.fury/fury_venv #Added by Fury CLI
 
@@ -172,3 +161,10 @@ export RANGER_FURY_VENV_LOCATION=/Users/sebas/.fury/fury_venv #Added by Fury CLI
 declare FURY_BIN_LOCATION="/Users/sebas/.fury/fury_venv/bin" # Added by Fury CLI installation process
 export PATH="$PATH:$FURY_BIN_LOCATION" # Added by Fury CLI installation process
 # Added by Fury CLI installation process
+
+## The following line is added by pre-commit 
+export PATH="/Users/sebas/Library/Python/3.9/bin:$PATH" 
+
+# fnm
+export PATH="/Users/sebas/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
